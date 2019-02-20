@@ -13,6 +13,14 @@
   </head>
 
   <body>
+    <div class="d-flex justify-content-between bg-light p-3">
+      <%= link_to "all restaurants", restaurants_path, class: "text-decoration-none text-secondary"  %>
+      <%= link_to "add a new restaurant", new_restaurant_path, class: "text-decoration-none text-secondary"  %>
+
+    </div>
+
+
+
     <%= yield %>
   </body>
 </html>

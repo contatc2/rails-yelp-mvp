@@ -3,7 +3,7 @@
 <%= simple_form_for [@restaurant] do |f| %>
   <%= f.error_notification %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, error:'name has to be present' %>
   <%= f.label :address %>
   <%= f.text_field :address %>
   <%= f.label :category %>
